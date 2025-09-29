@@ -2,9 +2,9 @@ import Index from "./components/Index";
 
 const App = () => {
   return (
-    <div>
+    <main className="container">
       <Index />
-    </div>
+    </main>
   );
 };
 

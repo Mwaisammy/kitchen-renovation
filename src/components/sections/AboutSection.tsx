@@ -31,16 +31,16 @@ const AboutSection = () => {
   ];
 
   return (
-    <div className="bg-[#f8f7f5] grid grid-cols-1 md:grid-cols-2  mt-20">
-      <div className="flex items-center">
+    <div className="bg-[#f8f7f5] grid grid-cols-1 md:grid-cols-2">
+      <div className="flex items-center justify-center mt-40 md:mt-0">
         <img
           src={aboutKitchen}
           alt="kitchen-renolvation"
-          className="md:w-full h-[90%] w-[60%] object-contain"
+          className="md:w-full h-[60%] md:h-[80%] w-[60%] object-contain"
         />
       </div>
 
-      <div className="p-20">
+      <div className="px-20">
         <div className="py-10 flex flex-col gap-[2.5rem]">
           <div className="flex gap-2 text-lg font-semibold uppercase">
             <span className="">____</span>

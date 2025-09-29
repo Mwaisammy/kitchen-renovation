@@ -1,6 +1,35 @@
 import React from "react";
-import kitchenRenovation from "../../assets/images/kitchen interior.jpg";
+import kitchenRenovation1 from "../../assets/images/kitchen-interior1.jpg";
+import kitchenRenovation2 from "../../assets/images/kitchen-interior2.jpg";
+import kitchenRenovation3 from "../../assets/images/kitchen-interior3.jpg";
+import kitchenRenovation4 from "../../assets/images/kitchen-interior4.jpg";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 const HeroSection = () => {
+  const kitchenRenovations = [
+    {
+      id: 1,
+      image: kitchenRenovation1,
+    },
+    {
+      id: 2,
+      image: kitchenRenovation2,
+    },
+    {
+      id: 3,
+      image: kitchenRenovation3,
+    },
+    {
+      id: 4,
+      image: kitchenRenovation4,
+    },
+  ];
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 h-[90vh]">
       <div className="bg-[#1d2b28] px-10 py-14">
@@ -21,11 +50,24 @@ const HeroSection = () => {
       </div>
 
       <div>
-        <img
-          src={kitchenRenovation}
-          className="w-full h-[90%] object-cover"
-          alt="kitchen-renolvation"
-        />
+        <Carousel className="relative">
+          <CarouselContent>
+            {kitchenRenovations.map((item) => (
+              <CarouselItem key={item.id}>
+                <img
+                  src={item.image}
+                  className="w-full h-[84vh] object-cover"
+                  alt="kitchen-renolvation"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          <div className=" absolute -bottom-4 left-16 flex items-center">
+            <CarouselPrevious className="rounded-none m-0 bg-amber-400" />
+            <CarouselNext className="rounded-none m-0 bg-amber-400" />
+          </div>
+        </Carousel>
       </div>
     </div>
   );

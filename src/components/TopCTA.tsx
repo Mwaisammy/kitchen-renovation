@@ -4,7 +4,9 @@ const TopCTA = () => {
   return (
     <div className="flex md:flex-row md:gap-10 md:items-center  gap-4 bg-[#1d2b28] text-white py-2 px-4">
       <div className="flex md:hidden items-center gap-4">
-        <img src="" alt="kitchen-renolvation" />
+        <div className="bg-yellow-600 w-10 h-10 rounded flex items-center justify-center">
+          <span className="text-white font-bold">K</span>
+        </div>
         <div>
           <h3>Kitchnox</h3>
           <h3>Modular Kitchen</h3>

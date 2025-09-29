@@ -45,7 +45,7 @@ const LatestWork = () => {
           <>
             <img
               src={item.image}
-              className="w-[100%] h-[200px] md:h-[350px]  object-contain"
+              className="w-[100%] h-[200px] md:h-[350px] hover:scale-105  object-contain"
               alt="kitchen-cabinets"
             />
           </>
