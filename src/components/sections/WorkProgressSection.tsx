@@ -33,9 +33,11 @@ const WorkProgressSection = () => {
   ];
 
   return (
-    <div className="p-20 flex flex-col gap-5">
-      <h3 className="uppercase text-xl text-center font-semibold">
-        --how we do work--
+    <div className="p-20 flex flex-col items-center gap-5">
+      <h3 className="uppercase flex items-center text-center gap-2 text-xl  font-semibold">
+        <span className="border-t border-stone-900 border-2 w-5"></span>
+        how we do work{" "}
+        <span className="border-t border-stone-900 border-2 w-5"></span>
       </h3>
 
       <h4 className="text-4xl text-center font-semibold">Our Work Progress</h4>
