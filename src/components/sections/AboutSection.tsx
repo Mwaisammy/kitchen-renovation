@@ -32,7 +32,7 @@ const AboutSection = () => {
   return (
     <div
       id="about"
-      className=" grid grid-cols-1 md:grid-cols-2 px-10 md:px-20 bg-[#f8f7f5]"
+      className=" grid grid-cols-1 md:grid-cols-2 md:gap-8  px-10 md:px-20 bg-[#f8f7f5]"
     >
       <div className="flex items-center justify-center  md:mt-0">
         <img
