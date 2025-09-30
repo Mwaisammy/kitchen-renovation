@@ -1,6 +1,5 @@
-import React from "react";
-import TopCTA from "../components/TopCTA";
 import MainNav from "../components/MainNav";
+import TopCTA from "../components/TopCTA";
 
 const Header = () => {
   return (

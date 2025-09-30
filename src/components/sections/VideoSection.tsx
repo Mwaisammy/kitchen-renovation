@@ -1,6 +1,5 @@
-import React from "react";
-import { Button } from "../ui/button";
 import kitchenRenovation from "../../assets/images/kitchen-cabinet-4.jpg";
+import { Button } from "../ui/button";
 
 const VideoSection = () => {
   return (

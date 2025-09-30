@@ -1,5 +1,3 @@
-import React from "react";
-
 import modernKitchen1 from "../../assets/images/modern-kitchen1.jpg";
 import modernKitchen2 from "../../assets/images/modern-kitchen2.jpg";
 import modernKitchen3 from "../../assets/images/modern-kitchen3.jpg";

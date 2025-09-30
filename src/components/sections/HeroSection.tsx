@@ -1,4 +1,3 @@
-import React from "react";
 import kitchenRenovation1 from "../../assets/images/kitchen-interior1.jpg";
 import kitchenRenovation2 from "../../assets/images/kitchen-interior2.jpg";
 import kitchenRenovation3 from "../../assets/images/kitchen-interior3.jpg";

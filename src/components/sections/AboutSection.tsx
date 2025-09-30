@@ -1,6 +1,5 @@
-import React from "react";
-import aboutKitchen from "../../assets/images/kitchen-about.jpg";
 import { CircleCheck } from "lucide-react";
+import aboutKitchen from "../../assets/images/kitchen-about.jpg";
 
 const AboutSection = () => {
   const services = [
