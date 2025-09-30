@@ -3,10 +3,10 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 type Props = {
-  hideCTA: boolean;
+  showCTA: boolean;
 };
 
-const MainNav = ({ hideCTA }: Props) => {
+const MainNav = ({ showCTA }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
@@ -14,16 +14,16 @@ const MainNav = ({ hideCTA }: Props) => {
     { id: "about", href: "#about", label: "About" },
     { id: "services", href: "#services", label: "Services" },
     { id: "projects", href: "#projects", label: "Projects" },
-    { id: "pages", href: "#pages", label: "Pages" },
     { id: "news", href: "#news", label: "News" },
     { id: "contact", href: "#contact", label: "Contact Us" },
   ];
 
   return (
     <nav
-      className={`bg-[#1d2b28] text-white fixed ${
-        hideCTA ? "top-10" : "top-0"
-      } left-0 right-0 z-50`}
+      className={`bg-[#1d2b28] text-white fixed 
+        ${showCTA ? "top-10" : "top-0"} 
+        left-0 right-0 z-40 transition-all duration-500
+      `}
     >
       <div className="flex items-center justify-between px-6 md:px-20 py-3">
         {/* Logo */}
@@ -62,13 +62,13 @@ const MainNav = ({ hideCTA }: Props) => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden  bg-[#1d2b28] px-6 py-4 space-y-4 border-t border-gray-700">
+        <div className="md:hidden bg-[#1d2b28] px-6 py-4 space-y-4 border-t border-gray-700">
           {navItems.map((item) => (
             <a
               key={item.id}
               href={item.href}
               className="block text-lg hover:text-[#b1803b] transition-all"
-              onClick={() => setIsOpen(false)} // close menu after click
+              onClick={() => setIsOpen(false)}
             >
               {item.label}
             </a>

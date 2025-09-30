@@ -3,24 +3,25 @@ import MainNav from "../components/MainNav";
 import TopCTA from "../components/TopCTA";
 
 const Header = () => {
-  const [hideCTA, setHideCTA] = useState(false);
+  const [showCTA, setShowCTA] = useState(true); //CTA is visible at first
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setHideCTA(true);
+      if (window.scrollY > 20) {
+        setShowCTA(false); // hide CTA after scrolling
       } else {
-        setHideCTA(false);
+        setShowCTA(true); // show CTA near top
       }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
-    <header className="relative">
-      <TopCTA hideCTA={hideCTA} />
-      <MainNav hideCTA={hideCTA} />
+    <header className="h-[18vh]">
+      <TopCTA showCTA={showCTA} />
+      <MainNav showCTA={showCTA} />
     </header>
   );
 };
