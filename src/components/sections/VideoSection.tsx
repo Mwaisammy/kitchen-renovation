@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 const VideoSection = () => {
   return (
     <div
-      className="relative h-[70vh]"
+      className="relative grid grid-cols-1 md:grid-cols-2 min-h-[70vh] bg-amber-300"
       style={{
         backgroundImage: ` url(${kitchenRenovation})`,
         backgroundSize: "cover",
@@ -13,7 +13,7 @@ const VideoSection = () => {
     >
       <div className="absolute inset-0 bg-gray-700 opacity-90" />
 
-      <div className="absolute z-10 grid grid-cols-1 md:grid-cols-2">
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2">
         <div className="flex flex-col p-20 gap-4">
           <h3 className="text-white font-semibold text-4xl">
             Our core values allow us to stay on track and{" "}

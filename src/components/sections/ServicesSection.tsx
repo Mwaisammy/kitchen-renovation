@@ -39,7 +39,8 @@ const ServicesSection = () => {
       className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-20  px-10 py-10 h-[90vh]"
     >
       <div className="flex flex-col gap-6">
-        <h4 className="font-bold uppercase text-sm text-stone-700">
+        <h4 className="flex items-center gap-4 font-bold uppercase text-lg text-stone-700">
+          <span className="border-t border-stone-900 border-2 w-8"></span>
           Our Services
         </h4>
 

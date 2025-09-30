@@ -30,7 +30,7 @@ const HeroSection = () => {
     },
   ];
   return (
-    <div id="home" className="grid grid-cols-1 md:grid-cols-2 h-[90vh]">
+    <div id="home" className="grid grid-cols-1 md:grid-cols-2 min-h-[90vh]">
       <div className="bg-[#1d2b28] px-10 py-14">
         <h3 className="text-white text-4xl py-4">
           Design your kitchen with our experts
@@ -42,20 +42,20 @@ const HeroSection = () => {
         </p>
 
         <div className="mt-20">
-          <button className="bg-[#3c5c55] text-white px-6 py-3 cursor-pointer">
+          <button className="bg-[#3c5c55] hover:bg-[#2e4641] text-white px-6 py-3 cursor-pointer">
             Discover More
           </button>
         </div>
       </div>
 
-      <div>
+      <div className=" p-10 md:p-0">
         <Carousel className="relative">
           <CarouselContent>
             {kitchenRenovations.map((item) => (
               <CarouselItem key={item.id}>
                 <img
                   src={item.image}
-                  className="w-full h-[84vh] object-cover"
+                  className="w-full lg:h-[84vh] h-[400px]  object-cover"
                   alt="kitchen-renolvation"
                 />
               </CarouselItem>
@@ -63,8 +63,8 @@ const HeroSection = () => {
           </CarouselContent>
 
           <div className=" absolute -bottom-4 left-16 flex items-center">
-            <CarouselPrevious className="rounded-none m-0 bg-amber-400" />
-            <CarouselNext className="rounded-none m-0 bg-amber-400" />
+            <CarouselPrevious className="rounded-none m-0 bg-yellow-700 text-white cursor-pointer hover:bg-yellow-800 hover:text-white " />
+            <CarouselNext className="rounded-none m-0 bg-yellow-700  text-white cursor-pointer hover:bg-yellow-800 hover:text-white" />
           </div>
         </Carousel>
       </div>

@@ -27,7 +27,7 @@ const StatsSection = () => {
         <>
           <div className="flex flex-col items-center gap-2">
             <h1
-              className="text-7xl font-extrabold"
+              className="lg:text-7xl text-3xl md:text-5xl font-extrabold"
               style={{
                 WebkitTextStroke: "1.5px #706f6fff",
                 WebkitTextFillColor: "transparent", // ensure fill is transparent

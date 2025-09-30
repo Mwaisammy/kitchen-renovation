@@ -28,21 +28,21 @@ const AboutSection = () => {
       icon: CircleCheck,
     },
   ];
-
+  // bg-[#f8f7f5]
   return (
-    <div id="about" className="bg-[#f8f7f5] grid grid-cols-1 md:grid-cols-2">
-      <div className="flex items-center justify-center mt-40 md:mt-0">
+    <div id="about" className=" grid grid-cols-1 md:grid-cols-2  bg-[#f8f7f5]">
+      <div className="flex items-center justify-center  md:mt-0">
         <img
           src={aboutKitchen}
           alt="kitchen-renolvation"
-          className="md:w-full h-[60%] md:h-[80%] w-[60%] object-contain"
+          className="md:w-full h-[60%] md:h-[80%] w-[60%] object-cover"
         />
       </div>
 
       <div className="px-20">
         <div className="py-10 flex flex-col gap-[2.5rem]">
-          <div className="flex gap-2 text-lg font-semibold uppercase">
-            <span className="">____</span>
+          <div className="flex items-center gap-2 text-lg font-semibold uppercase">
+            <span className="border-t border-stone-900 border-2 w-8"></span>
             <h3>About our workshop</h3>
           </div>
 
