@@ -34,7 +34,10 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-20  px-10 py-10 h-[90vh]">
+    <div
+      id="services"
+      className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-20  px-10 py-10 h-[90vh]"
+    >
       <div className="flex flex-col gap-6">
         <h4 className="font-bold uppercase text-sm text-stone-700">
           Our Services

@@ -30,7 +30,7 @@ const HeroSection = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 h-[90vh]">
+    <div id="home" className="grid grid-cols-1 md:grid-cols-2 h-[90vh]">
       <div className="bg-[#1d2b28] px-10 py-14">
         <h3 className="text-white text-4xl py-4">
           Design your kitchen with our experts

@@ -1,8 +1,17 @@
 import { Mail, Phone } from "lucide-react";
 
-const TopCTA = () => {
+type Props = {
+  hideCTA: boolean;
+};
+
+const TopCTA = ({ hideCTA }: Props) => {
   return (
-    <div className="flex md:flex-row md:gap-10 md:items-center  gap-4 bg-[#1d2b28] text-white py-2 px-4">
+    <div
+      id="contact"
+      className={`fixed top-0 left-0 w-full z-50 flex md:flex-row md:gap-10 md:items-center  gap-4 bg-[#1d2b28]  text-white py-2 px-4  transform transition-all duration-500 origin-top ${
+        hideCTA ? "opacity-100 rotate-x-0" : "opacity-0 -rotate-x-90"
+      } bg-[#1d2b28]`}
+    >
       <div className="flex md:hidden items-center gap-4">
         <div className="bg-yellow-600 w-10 h-10 rounded flex items-center justify-center">
           <span className="text-white font-bold">K</span>

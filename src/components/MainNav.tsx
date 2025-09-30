@@ -2,7 +2,11 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-const MainNav = () => {
+type Props = {
+  hideCTA: boolean;
+};
+
+const MainNav = ({ hideCTA }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
@@ -16,7 +20,11 @@ const MainNav = () => {
   ];
 
   return (
-    <nav className="bg-[#1d2b28] text-white">
+    <nav
+      className={`bg-[#1d2b28] text-white fixed ${
+        hideCTA ? "top-10" : "top-0"
+      } left-0 right-0 z-50`}
+    >
       <div className="flex items-center justify-between px-6 md:px-20 py-3">
         {/* Logo */}
         <div className="hidden md:flex items-center gap-2">

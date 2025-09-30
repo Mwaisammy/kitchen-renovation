@@ -24,7 +24,7 @@ const LatestWork = () => {
   ];
 
   return (
-    <div className="bg-[#242b2e] px-10 py-18 h-[90vh]">
+    <div id="projects" className="bg-[#242b2e] px-10 py-18 h-[90vh]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-20 mb-10">
         <div>
           <h3 className="text-4xl text-white capitalize">

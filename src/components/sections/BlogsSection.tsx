@@ -36,7 +36,7 @@ const BlogsSection = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center gap-4 p-10">
+    <div id="news" className="flex flex-col items-center gap-4 p-10">
       <div className="flex flex-col items-center">
         <h1 className="uppercase  font-bold tracking-wide">Our Blogs</h1>
         <h4 className="text-gray-900 text-4xl">Recent News & Articles</h4>
