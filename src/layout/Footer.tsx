@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-gray-900 text-gray-300">
+    <footer id="contact" className="bg-[#1d2b28] text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Logo & About */}
         <div className="space-y-4 md:col-span-2">
@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row gap-6 sm:gap-12 text-sm">
             <div>
               <p className="text-gray-400">Call Us</p>
-              <p className="font-semibold text-white">+1800(345)-67890</p>
+              <p className="font-semibold text-white">+254 115 450 287</p>
             </div>
             <div>
               <p className="text-gray-400">Send a message</p>

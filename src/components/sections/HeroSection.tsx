@@ -42,9 +42,12 @@ const HeroSection = () => {
         </p>
 
         <div className="mt-20">
-          <button className="bg-[#3c5c55] hover:bg-[#2e4641] text-white px-6 py-3 cursor-pointer">
+          <a
+            href="#projects"
+            className="bg-[#3c5c55] hover:bg-[#2e4641] text-white px-6 py-3 cursor-pointer inline-block"
+          >
             Discover More
-          </button>
+          </a>
         </div>
       </div>
 

@@ -37,9 +37,12 @@ const TheDreamSection = () => {
 
       {/* Button Section */}
       <div className="mt-10">
-        <button className="bg-gray-700 text-white px-8 py-3 rounded-lg shadow-md hover:bg-gray-900 transition-colors duration-300">
+        <a
+          href="#projects"
+          className="bg-gray-700 text-white px-8 py-3 rounded-lg shadow-md hover:bg-gray-900 transition-colors duration-300"
+        >
           Discover More
-        </button>
+        </a>
       </div>
     </div>
   );
